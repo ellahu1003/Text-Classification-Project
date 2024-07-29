@@ -27,7 +27,7 @@ The 20 Newsgroups dataset is fetched using sklearn.datasets.fetch_20newsgroups a
     ```
 2) Install the required packages:
    ```bash
-    pip install -r requirements.txt
+    pip install -r Requirements.txt
     ```
 3) Run the Jupyter Notebook:
    ```bash
