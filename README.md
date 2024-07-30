@@ -19,20 +19,6 @@ The 20 Newsgroups dataset is fetched using sklearn.datasets.fetch_20newsgroups a
 6) Matplotlib
 7) Jupyter Notebook
 
-## Setup and installations
-1) Clone the repository:
-   ```bash
-    git clone https://github.com/ellahu1003/text-classification-project.git
-    cd text-classification-project
-    ```
-2) Install the required packages:
-   ```bash
-    pip install -r Requirements.txt
-    ```
-3) Run the Jupyter Notebook:
-   ```bash
-    jupyter notebook notebook/Text_classification_project.ipynb
-    ```
 ## Project Structure
 ```markdown
 text-classification/
@@ -49,6 +35,54 @@ text-classification/
 │
 └── requirements.txt
 ```
+
+## Methodology
+1) Data Collection:
+   The project utilises the 'fetch_20newsgroups' dataset from the sklearn.datasets library. This dataset includes text data from 20 different newsgroups, which are categorised into various topics.
+
+2) Data Preprocessing:
+   1. Loading the Data: The dataset is fetched and loaded using the fetch_20newsgroups function from sklearn.datasets.
+   2. Creating DataFrame: The data and target variables are extracted and combined into a Pandas DataFrame. The target variable is also mapped to category names for better interpretability.
+   3. Saving Dataset: The DataFrame is saved as a CSV file for easy access and future use.
+
+3) Exploratory Data Analysis (EDA):
+   1. Checking Data Types: The data types of the DataFrame columns are checked to ensure correctness.
+   2. Inspecting Missing Values: The dataset is inspected for any missing values, no missing values present in the dataset.
+   3. Descriptive Statistics: Basic descriptive statistics are computed to understand the datase.
+   4. Data Distribution Visualisation: The distribution of categories in the dataset is visualised.
+
+4) Text Preprocessing and Cleaning:
+   1. Removing Stopwords: Stopwords, which carry less meaningful information, are removed using NLTK's list of English stopwords.
+   2. Text Cleaning: A function is defined to clean the text data by removing special characters, numbers, and converting text to lowercase.
+
+5) Feature Extraction:
+
+   TF-IDF Vectorization: The cleaned text data is transformed into numerical features using the TF-IDF vectoriser (TfidfVectoriser from sklearn.feature_extraction.text).
+   
+6) Model Building and Training:
+   1. Train-Test Split: The dataset is split into training and testing sets using an 80-20 split.
+   2. Naive Bayes Classifier: A Multinomial Naive Bayes classifier (MultinomialNB from sklearn.naive_bayes) is trained on the training set.
+
+7) Model Evaluation: 
+   1. Accuracy Score: The accuracy of the model is evaluated on the test set.
+   2. Classification Report: A classification report is generated to provide detailed performance metrics for each category.
+
+
+
+## Setup and installations
+1) Clone the repository:
+   ```bash
+    git clone https://github.com/ellahu1003/text-classification-project.git
+    cd text-classification-project
+    ```
+2) Install the required packages:
+   ```bash
+    pip install -r Requirements.txt
+    ```
+3) Run the Jupyter Notebook:
+   ```bash
+    jupyter notebook notebook/Text_classification_project.ipynb
+    ```
 
 ## Requirements
 The 'Requirements.txt' file lists all the Python packages required to run the project. Install these dependencies to avoid any compatibility issues.
