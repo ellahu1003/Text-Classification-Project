@@ -1,4 +1,4 @@
-# Text-classification-project
+# Text-classification-project with Naive Bayes
 
 ## Overview
 This project demonstrates text classification using the 20 Newsgroups dataset. The dataset contains approximately 20,000 newsgroup documents, partitioned across 20 different newsgroups. The aim is to classify these documents into their respective categories using the Multinomial Naive Bayes model. The project follows a structured approach that includes data loading and exploration, data cleaning and preprocessing, feature extraction using TF-IDF vectorization, and model training and evaluation.
